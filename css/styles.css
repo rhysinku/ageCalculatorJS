@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] { -webkit-appearance: button; cursor: pointer; }
+input:not([type='radio']):not([type='checkbox']), textarea, select{-webkit-appearance: none;}
+form, label {-webkit-text-size-adjust: 100%;}
+
+
+:root{
+--priFont: 'Poppins', sans-serif;
+
+--priColor: hsl(259, 100%, 65%);
+--secColor: hsl(0, 100%, 67%);
+
+--fwn: 400;
+--fwsm: 700;
+--fwb: 800;
+
+--White: hsl(0, 0%, 100%);
+--Offwhite: hsl(0, 0%, 94%);
+--Lightgrey: hsl(0, 0%, 86%);
+--Smokeygrey: hsl(0, 1%, 44%);
+--Offblack: hsl(0, 0%, 8%);
+
+
+}
+body{font-size: 20px; font-family: var(--priFont); background: #F0F0F0; font-weight:var(--fwn)}
+.wrapper{max-width: 1440px; width: 100%; margin:0 auto; position: relative;}
+
+
+main{}
+main .main_con{ padding: 0 10px; height: 100vh; display:flex; justify-content: center; align-items: center;} 
+
+.main_box{background: var(--White); padding-inline: 43px; padding-block: 45px; max-width: 760px; width: 100%; border-radius:  20px 20px 250px 20px;}
+
+.input_con{display: flex; justify-content: start; column-gap: 15px; position:relative; padding-bottom: 45px;}
+.input_con::before{content: ''; display:block; width: 100%; height: 1px; background: var(--Lightgrey); position:absolute; left: 0; right: 0; margin:auto; bottom: 0;}
+
+.input_con .input_box{max-width: 145px; width: 50%;}
+.input_con .input_box > ::placeholder{color: var(--Lightgrey);}
+ .input_box label{font-size: 18px; color:var(--Smokeygrey); text-transform: uppercase; font-weight: var(--fwsm); display: block; margin-bottom: 20px; letter-spacing: 1px;} 
+ .input_box input{ color: var(--Offblack); font-weight: var(--fwb); font-size: 38px; border-radius: 10px; padding-block:15px; padding-inline: 10px; box-sizing: border-box; width: 100%; font-family: var(--priFont); border-color: var(--Lightgrey); border-style:solid; border-width:1px;}
+
+.input_con a{max-width: 145px; width: 100%; aspect-ratio: 1/1; position:absolute; right: 0; bottom: -68px; background: var(--priColor); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;}
+.input_con a:hover{background: var(--Offblack);}
+.input_con a::before{content: ''; background: url(../images/icon-arrow.svg) center no-repeat; width: 65%; aspect-ratio: 1/1; background-size: contain; } 
+.result_box{text-align: left;}
+.result_box h2{line-height: 100%; font-size: 100px; font-weight: var(--fwb); font-style: italic;}
+.result_box h2 span{color: var(--priColor); }
+
+/* Error */
+.err{color: var(--secColor) !important; border-color: var(--secColor) !important;}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
