@@ -1,0 +1,30 @@
+@media only screen and (max-width : 1460px) {
+}
+@media only screen and (max-width : 1300px) {
+}
+@media only screen and (max-width : 1200px) {
+}
+@media only screen and (max-width : 1090px) {
+}
+@media only screen and (max-width : 1000px) {
+}
+@media only screen and (max-width : 800px) {
+    .result_box h2 span {
+        display: block;
+      }
+      .input_con a{width: 22%;}
+}
+
+@media only screen and (max-width : 600px) {
+    .input_con{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 20px;
+    }
+    .input_con .input_box{width: 100%; max-width: 100%;}
+    .result_box h2{font-size: 65px;}
+    .input_con a {
+        position: static;
+      }
+}
+

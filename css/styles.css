@@ -28,6 +28,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	margin: 0;
+	padding: 0;
 }
 ol, ul {
 	list-style: none;
@@ -73,7 +75,7 @@ body{font-size: 20px; font-family: var(--priFont); background: #F0F0F0; font-wei
 
 
 main{}
-main .main_con{ padding: 0 10px; height: 100vh; display:flex; justify-content: center; align-items: center;} 
+main .main_con{ padding: 0 10px; height: 95vh; display:flex; justify-content: center; align-items: center;} 
 
 .main_box{background: var(--White); padding-inline: 43px; padding-block: 45px; max-width: 760px; width: 100%; border-radius:  20px 20px 250px 20px;}
 
